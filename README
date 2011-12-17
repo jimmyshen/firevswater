@@ -46,7 +46,7 @@ At the moment, this game:
   exiting completely. Thus, there is no way to "Play Again" within the
   game.
 
-- When built without the FVW\_EMBED\_RES option, the game expects to find
+- When built without the FVW_EMBED_RES option, the game expects to find
   all image resources in the 'res' folder.
 
 HOW TO BUILD
@@ -55,22 +55,22 @@ HOW TO BUILD
 Dependencies
 ------------
 
-This source has no other dependencies other than SDL and SDL\_image.
+This source has no other dependencies other than SDL and SDL_image.
 Thus, you should not have much trouble building this software on
-platforms supported by SDL and SDL\_image. You can download SDL
-and SDL\_image from the web:
+platforms supported by SDL and SDL_image. You can download SDL
+and SDL_image from the web:
 
 - http://www.libsdl.org
-- http://www.libsdl.org/projects/SDL\_image
+- http://www.libsdl.org/projects/SDL_image
 
-The supplied Makefile is designed for \*NIX style systems, so
+The supplied Makefile is designed for *NIX style systems, so
 targeting such a machine would be the easiest route.
 
 Debug build
 -----------
 
 I added a bunch of debug logging that can be enabled by
-specifying FVW\_DEBUG=1 when running make:
+specifying FVW_DEBUG=1 when running make:
 
     % make FVW_DEBUG=1
 
@@ -80,7 +80,7 @@ debug symbols in the binary.
 Embedded resources
 ------------------
 
-You can specify the FVW\_EMBED\_RES option to tell make to
+You can specify the FVW_EMBED_RES option to tell make to
 generate headers that encode all the image resources for
 compilation into the final binary:
 
@@ -95,7 +95,7 @@ Please see COPYING for more information.
 CREDITS
 =======
 
-SDL and SDL\_image library courtesy of Sam Latinga
+SDL and SDL_image library courtesy of Sam Latinga
 GNU Library General Public License
 Copyright (c) 1997-2009
 http://www.libsdl.org
