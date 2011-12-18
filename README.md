@@ -32,8 +32,7 @@ reveals all possible moves for a highlighted piece.
 Screenshot
 ==========
 
-![fvw screenshot](screenshot.png)
-
+![fvw screenshot](http://i.imgur.com/jnrIp.png)
 
 Limitations
 ===========
