@@ -1,4 +1,5 @@
 CC		= gcc
+LD      = gcc
 RM      = rm -f
 INCLUDE = include
 TARGET	= fvw
@@ -26,11 +27,11 @@ LDFLAGS	= `sdl-config --libs` -lSDL_image
 
 .PHONY: ${RES}
 
-.cc.o:
+.c.o:
 	${CC} -o $@ ${CFLAGS} -c $<
 
-all: ${RES} ${OBJS} src/fvw_main.c
-	${CC} -o ${TARGET} ${LDFLAGS} ${OBJS}
+all: ${RES} ${OBJS}
+	${LD} -o ${TARGET} ${LDFLAGS} ${OBJS}
 
 ${RES}:
 ifdef FVW_EMBED_RES
