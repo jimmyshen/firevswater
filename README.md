@@ -1,4 +1,4 @@
-WHAT IT IS
+What it is
 ==========
 
 Fire vs. Water&mdash;or "fvw" for short&mdash;is a themed Chinese Checkers game
@@ -18,7 +18,7 @@ source code to the wild--blemishes and all.
 
 Enjoy!
 
-HOW TO PLAY
+How to play
 ===========
 
 The game relies solely on the mouse for play. Simply select a piece
@@ -30,7 +30,13 @@ corner.
 A certain three-key combination will allow you to enable a mode that
 reveals all possible moves for a highlighted piece.
 
-LIMITATIONS
+Screenshot
+==========
+
+![fvw screenshot](screenshot.png)
+
+
+Limitations
 ===========
 
 At the moment, this game:
@@ -49,7 +55,7 @@ At the moment, this game:
 - When built without the FVW_EMBED_RES option, the game expects to find
   all image resources in the 'res' folder.
 
-HOW TO BUILD
+How to build
 ============
 
 Dependencies
@@ -86,13 +92,13 @@ compilation into the final binary:
 
     % make FVW_EMBED_RES
 
-LICENSE
+License
 =======
 
 This source code is distributed under the GNU General Public License.
 Please see COPYING for more information.
 
-CREDITS
+Credits
 =======
 
 SDL and SDL_image library courtesy of Sam Latinga
