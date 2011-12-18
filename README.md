@@ -1,16 +1,15 @@
 What it is
 ==========
 
-Fire vs. Water&mdash;or "fvw" for short&mdash;is a themed Chinese Checkers game
-designed for two players. The game was borne from a few enjoyable
-rounds of the Chinese Checkers with my girlfriend. I decided to create a
-software version since I was itching to write a game. The software
-version is also decidedly easy to travel with. We played this on our
-way to Vegas! :)
+Fire vs. Water--or "fvw" for short--is a themed Chinese Checkers game
+designed for two players. The game was borne from a few enjoyable rounds
+of Chinese Checkers with my girlfriend. I decided to create a software
+version since I was itching to write a game. Also, the software version is
+decidedly easier to travel with. We played this on our way to Vegas! :)
 
-To make it more interesting, I've designed the graphics for the game
-based on a graphical theme of fire versus water. As you can see, I was
-not as creative with the name.
+To make it more interesting, I've designed the game based on a graphical
+theme of fire versus water. As you can see, I was not as creative with
+the title of the game.
 
 I originally had plans to extend the game to support network play, but
 have lost interest in developing it. I've decided to introduce this
@@ -111,4 +110,4 @@ Creative Commons Attribution Noncommercial Share-Alike 3.0
 http://dragonartz.wordpress.com
 
 All other graphics and programming by Chun Min Shen
-These resources are
+Copyright (c) 2011
