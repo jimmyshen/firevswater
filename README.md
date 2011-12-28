@@ -29,6 +29,8 @@ corner.
 A certain three-key combination will allow you to enable a mode that
 reveals all possible moves for a highlighted piece.
 
+Press 'q' or <ESC> to exit the game.
+
 Screenshot
 ==========
 
@@ -41,10 +43,6 @@ At the moment, this game:
 
 - Only runs in 800x600, windowed mode. A one-ine change in the source
   code will allow you to run it in fullscreen.
-
-- At the moment, there is no way for you to exit the game except by
-  clicking your system's native window exit control. If you choose to
-  go fullscreen, you may want to add a keybinding into the code.
 
 - After a player wins, the game will wait for one more keypress before
   exiting completely. Thus, there is no way to "Play Again" within the

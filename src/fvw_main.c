@@ -91,10 +91,14 @@ int main(int argc, char* argv[]) {
             }
             break;
         case SDL_KEYDOWN:
-            if ( event.key.keysym.mod == KMOD_LSHIFT &&
-                    event.key.keysym.sym == (SDLK_a | SDLK_w) )
+            if ( event.key.keysym.sym == SDLK_q ||
+                    event.key.keysym.sym == SDLK_ESCAPE ) {
+                listen = 0;
+            } else if ( event.key.keysym.mod == KMOD_LSHIFT &&
+                    event.key.keysym.sym == (SDLK_a | SDLK_w) ) {
                 redraw = 1;
                 TOGGLE(mode1337);
+            }
             break;
         case SDL_QUIT:
             listen = 0;

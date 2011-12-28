@@ -111,16 +111,8 @@ FVW_BOOL fvw_LoadAssets(fvw_RendererAssets* assets) {
          !assets->fire_wins   ||
          !assets->water_wins  ) {
 
-        if ( assets->fire_board ) SDL_FreeSurface(assets->fire_board);
-        if ( assets->water_board ) SDL_FreeSurface(assets->water_board);
-        if ( assets->src_cursor ) SDL_FreeSurface(assets->src_cursor);
-        if ( assets->dst_cursor ) SDL_FreeSurface(assets->dst_cursor);
-        if ( assets->fire_piece ) SDL_FreeSurface(assets->fire_piece);
-        if ( assets->water_piece ) SDL_FreeSurface(assets->water_piece);
-        if ( assets->fire_wins ) SDL_FreeSurface(assets->fire_wins);
-        if ( assets->water_wins ) SDL_FreeSurface(assets->water_wins);
+        fvw_FreeAssets(assets);
 
-        memset(assets, 0, sizeof(fvw_RendererAssets));
         TRACE("assets failed to load!");
     } else {
         TRACE("assets loaded successfully.");
@@ -141,6 +133,8 @@ void fvw_FreeAssets(fvw_RendererAssets* assets) {
     if ( assets->dst_cursor ) SDL_FreeSurface(assets->dst_cursor);
     if ( assets->fire_piece ) SDL_FreeSurface(assets->fire_piece);
     if ( assets->water_piece ) SDL_FreeSurface(assets->water_piece);
+    if ( assets->fire_wins ) SDL_FreeSurface(assets->fire_wins);
+    if ( assets->water_wins ) SDL_FreeSurface(assets->water_wins);
 
     memset(assets, 0, sizeof(fvw_RendererAssets));
 
